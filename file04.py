@@ -6,9 +6,10 @@ def main(data:str):
     Returns:
         list: return answer
     """
+
     s=[]
     for i in data:
-        if i.isalpha():
+        if not i.isdigit():
             s.append(i)
     return s
 f=open('txt_file/data04.txt')
